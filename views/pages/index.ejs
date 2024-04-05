@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/style.css">
+  <title>ChatGPT Web Application</title>
+</head>
+<body>
+  <h1>ChatGPT Web Application</h1>
+  <form action="/generate" method="post">
+    <label for="topic">Topic:</label>
+    <input type="text" id="topic" name="topic" required>
+    <label for="style">Style:</label>
+    <select id="style" name="style">
+      <option value="sad">Sad</option>
+      <option value="scary">Scary</option>
+      <option value="serious">Serious</option>
+      <option value="adventurous">Adventurous</option>
+      <option value="">None</option>
+    </select>
+    <button type="submit">Generate Story</button>
+  </form>
+
+  <% if(topic && style && originalStory && funnyStory) { %>
+    <h2>Topic: <%= topic %></h2>
+    <h3>Style: <%= style %></h3>
+    <h3>Original Story</h3>
+    <p><%= originalStory %></p>
+    <h3>Funny Rewrite</h3>
+    <p><%= funnyStory %></p>
+  <% } %>
+</body>
+</html>
