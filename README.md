@@ -1,6 +1,6 @@
 # ChatGPT Web Applicaion
 
-This is a simple ChatGPT Web Application that allows users to generate stories based on a chosen topic and style using the OpenAI API. Users can select a topic from a dropdown menu and choose a style, and the application generates a story accordingly. Additionally, the generated story can be rewritten in a funny way.
+This is a simple ChatGPT Web Application that allows users to generate stories based on a chosen topic and style using the OpenAI API. Users can choose a topic and select a style from a dropdown menu, and the application generates a story accordingly. Additionally, the generated story can be rewritten in a funny way.
 
 ## Features
 
